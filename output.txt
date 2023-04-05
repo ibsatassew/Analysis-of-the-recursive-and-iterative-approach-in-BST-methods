@@ -1,0 +1,41 @@
+MEASURING RUNNING TIME 
+THE RUNNING TIME OF THE inorder() METHOD USING ITERATIVE APPROACH WHEN INSERTING
+
+A RANDOM MEDIUM SIZED DATASET 
+Elapsed Time in nanoseconds: 50125
+
+A SORTED MEDIUM SIZED DATASET
+Elapsed Time in nanoseconds: 59375
+
+JUSTIFICATION
+The time complexity of the in-order traversal algorithm is independent of the height of the tree, and it should have the same running time for both sorted and random datasets.
+
+The time complexity of the in-order traversal algorithm is O(n), where n is the number of nodes in the tree. It is not dependent on the order or distribution of the elements in the tree. In other words, regardless of whether the elements are sorted or in a random order, the in-order traversal algorithm will visit each node once and perform a constant amount of work at each node. Therefore, the time complexity of the in-order traversal algorithm should be the same for both sorted and random datasets.
+
+THE RUNNING TIME OF THE inorder() METHOD USING RECUSRSIVE APPROACH WHEN INSERTING
+
+A RANDOM MEDIUM SIZED DATASET 
+Elapsed Time in nanoseconds: 55250
+
+A SORTED MEDIUM SIZED DATASET 
+Elapsed Time in nanoseconds: 67042
+
+COMPARISON
+Both the iterative (using a loop and stack) and recursive implementations of the in-order traversal algorithm visit each node of the tree exactly once, so they have the same time complexity of O(n), where n is the number of nodes in the tree.
+
+The iterative implementation uses a stack to keep track of the nodes that need to be visited, whereas the recursive implementation uses the call stack to keep track of the current node and the nodes that still need to be visited. Despite the different data structures used, both implementations traverse the nodes in the same order and perform the same operations on each node.
+
+///////////////////////////EXTRA CREDIT///////////////////////////////////
+
+THE RUNNING TIME OF THE insert() METHOD USING ITERATIVE APPROACH WHEN INSERTING
+
+A SORTED LARGE DATASET
+Elapsed Time in nanoseconds: 2165906541
+
+
+THE RUNNING TIME OF THE insert() METHOD USING RECURSIVE APPROACH WHEN INSERTING
+
+A SORTED LARGE DATASET 
+Elapsed Time in nanoseconds: 2987713875
+
+In general, iterative implementations of insert() may have a more predictable and efficient running time than recursive implementations. This is because recursive methods may involve additional overhead due to the function call stack and the repeated creation and destruction of local variables.
